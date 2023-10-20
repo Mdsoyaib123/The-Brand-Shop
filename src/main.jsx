@@ -15,6 +15,10 @@ import Login from './Pages/Login/Login';
 import Register from './components/Register/Register';
 import AuthProvider from './ContextApi/AuthProvider';
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import BrandProducts from './components/BrandProducts/BrandProducts';
+import ViewDetelis from './components/ViewDetelis/ViewDetelis';
+import Update from './components/Update/Update';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,12 +30,24 @@ const router = createBrowserRouter([
         element: <Home></Home>
       },
       {
+        path:'/brands/:brandName',
+        element: <BrandProducts></BrandProducts>,
+        loader: ({params})=>fetch(`http://localhost:5000/brands/${params.brandName}`)
+        
+      },{
+        path:'/brands/:brandName/:name',
+        element: <ViewDetelis></ViewDetelis>,
+        loader: ({params})=>fetch(`http://localhost:5000/brands/${params.brandName}`)
+        
+      },
+      {
         path: '/addProduct',
-        element: <AddProduct></AddProduct>
+        element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
       },
       {
         path: '/myCart',
-        element: <MyCart></MyCart>
+        element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
+        loader: ()=>fetch(`http://localhost:5000/cart`)
       },
       {
         path: '/login',
@@ -40,6 +56,11 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>
+      },
+      {
+        path: '/brands/:name',
+        element: <Update></Update>,
+        loader: ({params})=>fetch(`http://localhost:5000/brands/${params.name}`)
       }
     ]
   },

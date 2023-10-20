@@ -1,0 +1,221 @@
+[
+  {
+    "name": "iPhone 13 Pro",
+    "img": "https://i.ibb.co/MSzykv3/apple-iphone-13-pro-01.jpg",
+    "product": "Phone",
+    "brandName": "apple",
+    "price": 1099.99,
+    "rating": 4.8,
+    "description": "The iPhone 13 Pro is a high-end smartphone from Apple, known for its exceptional performance and camera capabilities."
+  },
+  {
+    "name": "MacBook Air",
+    "img": "https://i.ibb.co/5KyvZ6g/Mac-Book-Air-15inch-5.webp",
+    "product": "Laptop",
+    "brandName": "apple",
+    "price": 999.99,
+    "rating": 4.9,
+    "description": "The MacBook Air is a lightweight and powerful laptop by Apple, perfect for both work and play."
+  },
+  {
+    "name": "Apple Watch Series 7",
+    "img": "https://i.ibb.co/3yYqfxx/Apple-watch-series7-hero-09142021-big-jpg-large.jpg",
+    "brandName": "apple",
+    "product": "Watch",
+    "price": 399.99,
+    "rating": 4.7,
+    "description": "The Apple Watch Series 7 is a stylish and feature-packed smartwatch for fitness and everyday use."
+  },
+  {
+    "name": "iPad Pro",
+    "img": "https://i.ibb.co/52fcY62/i-Pad-Pro-M2-2022-11inch-Space-Gray-9527.jpg",
+    "product": "Ipad",
+    "brandName": "apple",
+    "price": 799.99,
+    "rating": 4.6,
+    "description": "The iPad Pro is a powerful and versatile tablet designed for both work and entertainment."
+  },
+  {
+    "name": "Galaxy S21",
+    "img": "https://i.ibb.co/7z3qpH7/samsung-galaxy-s21-ultra-5g-2.jpg",
+    "product": "Phone",
+    "brandName": "samsung",
+    "price": 899.99,
+    "rating": 4.7,
+    "description": "The Galaxy S21 is a flagship phone from Samsung, known for its cutting-edge features and design."
+  },
+  {
+    "name": "Galaxy Tab S7",
+    "img": "https://i.ibb.co/cDqNrKY/Samsung-Galaxy-Tab-S7-Plus-Mystic-Black.jpg",
+    "product": "Phone",
+    "brandName": "samsung",
+    "price": 499.99,
+    "rating": 4.6,
+    "description": "The Galaxy Tab S7 is a versatile tablet by Samsung, suitable for work and entertainment."
+  },
+  {
+    "name": "Galaxy Watch 4",
+    "img": "https://i.ibb.co/VTpb8cj/531806-Product-0-I-637653878549294344-61995914-7349-4c20-b995-d753dedaca64.jpg",
+    "brandName": "samsung",
+    "product": "Watch",
+    "price": 299.99,
+    "rating": 4.5,
+    "description": "The Galaxy Watch 4 is a stylish and functional smartwatch designed for active lifestyles."
+  },
+  {
+    "name": "Galaxy Buds Pro",
+    "img": "https://i.ibb.co/HDSxB01/gsmarena-002.jpg",
+    "brandName": "samsung",
+    "product": "Buds",
+    "price": 149.99,
+    "rating": 4.4,
+    "description": "The Galaxy Buds Pro are high-quality earbuds by Samsung, offering great sound and noise cancellation."
+  },
+  {
+    "name": "Surface Laptop 4",
+    "img": "https://i.ibb.co/rtjVnnQ/surface-laptop-4-4.jpg",
+    "product": "Laptop",
+    "brandName": "microsoft",
+    "price": 1299.99,
+    "rating": 4.6,
+    "description": "The Surface Laptop 4 is a sleek and powerful laptop from Microsoft, ideal for professionals and students."
+  },
+  {
+    "name": "Surface Pro 7",
+    "img": "https://i.ibb.co/C7w2VPH/sddefault.jpg",
+    "product": "Laptop",
+    "brandName": "microsoft",
+    "price": 799.99,
+    "rating": 4.5,
+    "description": "The Surface Pro 7 is a versatile 2-in-1 laptop from Microsoft, perfect for on-the-go productivity."
+  },
+  {
+    "name": "Surface Book 3",
+    "img": "https://i.ibb.co/RBKhgxd/surfacebook3custommacbd-aec191cf-97cd-4c7c-9048-f73fd851103f.jpg",
+    "product": "Laptop",
+    "brandName": "microsoft",
+    "price": 1499.99,
+    "rating": 4.7,
+    "description": "The Surface Book 3 is a premium 2-in-1 laptop by Microsoft, designed for high-performance tasks."
+  },
+  {
+    "name": "Xbox Series X",
+    "img": "https://i.ibb.co/hg792rN/Xbox-Series-Xand-S-HERO-4a14028e4718f26baf8b.jpg",
+    "product": "Games",
+    "brandName": "microsoft",
+    "price": 499.99,
+    "rating": 4.8,
+    "description": "The Xbox Series X is a powerful gaming console from Microsoft, offering a seamless gaming experience."
+  },
+  {
+    "name": "Pixel 6 Pro",
+    "img": "https://i.ibb.co/K94zsyn/3784-95312.jpg",
+    "brandName": "google",
+    "product": "Phone",
+    "price": 899.99,
+    "rating": 4.7,
+    "description": "The Pixel 6 Pro is a top-tier smartphone by Google, known for its camera and Android experience."
+  },
+  {
+    "name": "Pixelbook Go",
+    "img": "https://i.ibb.co/L1bTNDF/81s-DDc7r-Kq-L.jpg",
+    "brandName": "google",
+    "product": "Laptop",
+    "price": 799.99,
+    "rating": 4.6,
+    "description": "The Pixelbook Go is a lightweight and portable laptop by Google, great for on-the-go productivity."
+  },
+  {
+    "name": "Nest Hub Max",
+    "img": "https://i.ibb.co/K569qhW/Cadddpture.jpg",
+    "brandName": "google",
+    "product": "Ipad",
+    "price": 229.99,
+    "rating": 4.5,
+    "description": "The Nest Hub Max is a smart display by Google, perfect for managing your home and staying connected."
+  },
+  {
+    "name": "Pixel Buds",
+    "img": "https://i.ibb.co/DW8sKRm/Google-Pixel-Buds-Pro-Charcoal-8828.jpg",
+    "brandName": "google",
+    "product": "Laptop",
+    "price": 149.99,
+    "rating": 4.4,
+    "description": "The Pixel Buds are wireless earbuds by Google, offering quality sound and convenience."
+  },
+  {
+    "name": "Sony Xperia 1 III",
+    "img": "https://i.ibb.co/RyW3Mbd/61-SPQ9-Snfp-L.jpg",
+    "brandName": "sony",
+    "product": "Phone",
+    "price": 1099.99,
+    "rating": 4.8,
+    "description": "The Sony Xperia 1 III is a flagship smartphone known for its display and camera capabilities."
+  },
+  {
+    "name": "Sony Bravia OLED TV",
+    "img": "https://i.ibb.co/VW1cdzT/860-X740-01.jpg",
+    "brandName": "sony",
+    "product": "Tv",
+    "price": 1999.99,
+    "rating": 4.9,
+    "description": "The Sony Bravia OLED TV is a high-quality television with stunning picture and sound."
+  },
+  {
+    "name": "Sony WH-1000XM4 Headphones",
+    "img": "https://i.ibb.co/frCQV5M/sony-wh-1000xm4-wireless-industry-leading-noise-canceling-overhead-headphones-tout.jpg",
+    "brandName": "sony",
+    "product": "Headphones",
+    "price": 349.99,
+    "rating": 4.7,
+    "description": "The Sony WH-1000XM4 Headphones are premium noise-canceling headphones for an immersive audio experience."
+  },
+  {
+    "name": "PlayStation 5",
+    "img": "https://i.ibb.co/dP3N0Jb/Hkd-MToxijo-Hfz4-Jw-Ugfh3-G-1200-80.jpg",
+    "brandName": "sony",
+    "product": "Games",
+    "price": 499.99,
+    "rating": 4.9,
+    "description": "The PlayStation 5 is Sony's next-gen gaming console, offering a vast library of games and top-notch performance."
+  },
+  
+{
+  "name": "Intel Core i9-11900K",
+  "img": "https://i.ibb.co/1mD2jm4/images-q-tbn-ANd9-Gc-QLvf-Dy-Tihs0oc-FT-7n-U-Prosa-MNW-Tm2-ZCA-usqp-CAU.jpg",
+  "brandName": "intel",
+  "product": "Laptop",
+  "price": 499.99,
+  "rating": 4.8,
+  "description": "The Intel Core i9-11900K is a high-performance processor, ideal for demanding computing tasks."
+},
+{
+  "name": "Intel NUC 11",
+  "img": "https://i.ibb.co/2Yf0ZS9/nuc11pahi3-01-500x500.jpg",
+  "brandName": "intel",
+  "product": "Pc",
+  "price": 699.99,
+  "rating": 4.7,
+  "description": "The Intel NUC 11 is a compact and powerful mini PC, suitable for various applications."
+},
+{
+  "name": "Intel SSD 670p",
+  "img": "https://i.ibb.co/p2ChVsk/intel-ssd-670p-front-on-box.jpg",
+  "brandName": "intel",
+  "product": "Ssd",
+  "price": 149.99,
+  "rating": 4.6,
+  "description": "The Intel SSD 670p is a solid-state drive that offers fast storage and reliability for your data."
+},
+{
+  "name": "Intel Core i5-11400",
+  "img": "https://i.ibb.co/VJ9cnR4/Intel-Core-i5-11400-3.jpg",
+  "brandName": "intel",
+  "product": "Laptop",
+  "price": 299.99,
+  "rating": 4.5,
+  "description": "The Intel Core i5-11400 is a mid-range processor, providing a balance of performance and value."
+}
+  
+]
+

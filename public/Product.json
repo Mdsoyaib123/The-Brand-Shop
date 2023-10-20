@@ -1,0 +1,202 @@
+[
+  {
+   "brandName":"apple",
+    "apple": [
+      
+    {
+      "name": "iPhone 13 Pro",
+      "img": "iphone13pro.jpg",
+      "brandName": "Apple",
+      "price": 1099.99,
+      "rating": 4.8
+    },
+    {
+      "name": "MacBook Air",
+      "img": "macbookair.jpg",
+      "brandName": "Apple",
+      "price": 999.99,
+      "rating": 4.9
+    },
+    {
+      "name": "Apple Watch Series 7",
+      "img": "applewatchseries7.jpg",
+      "brandName": "Apple",
+      "price": 399.99,
+      "rating": 4.7
+    },
+    {
+      "name": "iPad Pro",
+      "img": "ipadpro.jpg",
+      "brandName": "Apple",
+      "price": 799.99,
+      "rating": 4.6
+    }
+]
+},
+{
+  "brandName":"samsung",
+"samsung": [
+    {
+      "name": "Galaxy S21",
+      "img": "galaxys21.jpg",
+      "brandName": "Samsung",
+      "price": 899.99,
+      "rating": 4.7
+    },
+    {
+      "name": "Galaxy Tab S7",
+      "img": "galaxytabs7.jpg",
+      "brandName": "Samsung",
+      "price": 499.99,
+      "rating": 4.6
+    },
+    {
+      "name": "Galaxy Watch 4",
+      "img": "galaxywatch4.jpg",
+      "brandName": "Samsung",
+      "price": 299.99,
+      "rating": 4.5
+    },
+    {
+      "name": "Galaxy Buds Pro",
+      "img": "galaxybudspro.jpg",
+      "brandName": "Samsung",
+      "price": 149.99,
+      "rating": 4.4
+    }
+  ]
+},
+{
+  "brandName":"microsoft",
+    "microsoft":  [
+        {
+          "name": "Surface Laptop 4",
+          "img": "surfacelaptop4.jpg",
+          "brandName": "Microsoft",
+          "price": 1299.99,
+          "rating": 4.6
+        },
+        {
+          "name": "Surface Pro 7",
+          "img": "surfacepro7.jpg",
+          "brandName": "Microsoft",
+          "price": 799.99,
+          "rating": 4.5
+        },
+        {
+          "name": "Surface Book 3",
+          "img": "surfacebook3.jpg",
+          "brandName": "Microsoft",
+          "price": 1499.99,
+          "rating": 4.7
+        },
+        {
+          "name": "Xbox Series X",
+          "img": "xboxseriesx.jpg",
+          "brandName": "Microsoft",
+          "price": 499.99,
+          "rating": 4.8
+        }
+      ]
+},
+{
+  "brandName":"google",
+    "google":  [
+        {
+          "name": "Pixel 6 Pro",
+          "img": "pixel6pro.jpg",
+          "brandName": "Google",
+          "price": 899.99,
+          "rating": 4.7
+        },
+        {
+          "name": "Pixelbook Go",
+          "img": "pixelbookgo.jpg",
+          "brandName": "Google",
+          "price": 799.99,
+          "rating": 4.6
+        },
+        {
+          "name": "Nest Hub Max",
+          "img": "nesthubmax.jpg",
+          "brandName": "Google",
+          "price": 229.99,
+          "rating": 4.5
+        },
+        {
+          "name": "Pixel Buds",
+          "img": "pixelbuds.jpg",
+          "brandName": "Google",
+          "price": 149.99,
+          "rating": 4.4
+        }
+      ]
+},
+{ 
+  "brandName":"sony",
+    "sony":  [
+        {
+          "name": "Sony Xperia 1 III",
+          "img": "sonyxperia1iii.jpg",
+          "brandName": "Sony",
+          "price": 1099.99,
+          "rating": 4.8
+        },
+        {
+          "name": "Sony Bravia OLED TV",
+          "img": "sonybraviaoled.jpg",
+          "brandName": "Sony",
+          "price": 1999.99,
+          "rating": 4.9
+        },
+        {
+          "name": "Sony WH-1000XM4 Headphones",
+          "img": "sonyheadphones.jpg",
+          "brandName": "Sony",
+          "price": 349.99,
+          "rating": 4.7
+        },
+        {
+          "name": "PlayStation 5",
+          "img": "playstation5.jpg",
+          "brandName": "Sony",
+          "price": 499.99,
+          "rating": 4.9
+        }
+      ]
+},
+{
+  "brandName":"intel",
+    "intel" : [
+        {
+          "name": "Intel Core i9-11900K",
+          "img": "intelcorei9.jpg",
+          "brandName": "Intel",
+          "price": 499.99,
+          "rating": 4.8
+        },
+        {
+          "name": "Intel NUC 11",
+          "img": "intelnuc11.jpg",
+          "brandName": "Intel",
+          "price": 699.99,
+          "rating": 4.7
+        },
+        {
+          "name": "Intel SSD 670p",
+          "img": "intelssd670p.jpg",
+          "brandName": "Intel",
+          "price": 149.99,
+          "rating": 4.6
+        },
+        {
+          "name": "Intel Core i5-11400",
+          "img": "intelcorei5.jpg",
+          "brandName": "Intel",
+          "price": 299.99,
+          "rating": 4.5
+        }
+      ]
+}
+
+]

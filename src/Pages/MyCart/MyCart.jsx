@@ -1,8 +1,18 @@
+import { useLoaderData } from "react-router-dom";
+
+import { useState } from "react";
+import MyCartCard from "../../components/MyCartCard/MyCartCard";
 
 const MyCart = () => {
+    const loader = useLoaderData();
+    // console.log(loader);
+   
     return (
         <div>
-            <h1>My Cart </h1>
+            
+            {
+                loader.map(item=><MyCartCard key={item.name} item={item}>{loader}</MyCartCard>)
+            }
         </div>
     );
 };

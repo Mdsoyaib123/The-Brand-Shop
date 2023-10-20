@@ -1,0 +1,32 @@
+[
+    {
+      "brandName": "apple",
+      "id":"1",
+      "img": "https://i.ibb.co/pr042xV/apple-logo-19106337.webp"
+    },
+    {
+      "brandName": "samsung",
+      "id":"2",
+      "img": "https://i.ibb.co/jHC28cZ/samsung-logo-4-BA7-D9-F6-D7-seeklogo-com.png"
+    },
+    {
+      "brandName": "microsoft",
+      "id":"3",
+      "img": "https://i.ibb.co/CMh2f5m/logo-27046-1280.webp"
+    },
+    {
+      "brandName": "google",
+      "id":"4",
+      "img": "https://i.ibb.co/9g6hBPP/Google-G-Logo-svg.webp"
+    },
+    {
+      "brandName": "sony",
+      "id":"5",
+      "img": "https://i.ibb.co/fYfNcfC/Sony-Logo.png"
+    },
+    {
+      "brandName": "intel",
+      "id":"6",
+      "img": "https://i.ibb.co/fFyFGqf/Intel-Logo-2005.png"
+    }
+  ]
