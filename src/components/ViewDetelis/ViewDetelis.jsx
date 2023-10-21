@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const ViewDetelis = () => {
     const loader = useLoaderData();
@@ -17,6 +18,7 @@ const ViewDetelis = () => {
         .then(res=>res.json())
         .then(data=>{
             console.log(data);
+            Swal.fire('You add a product successfully')
         })
     }
     return (

@@ -58,9 +58,9 @@ const router = createBrowserRouter([
         element: <Register></Register>
       },
       {
-        path: '/brands/:name',
+        path: '/brand/:name',
         element: <Update></Update>,
-        loader: ({params})=>fetch(`http://localhost:5000/brands/${params.name}`)
+        loader: ({params})=>fetch(`http://localhost:5000/brand/${params.name}`)
       }
     ]
   },

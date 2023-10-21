@@ -1,9 +1,10 @@
 import { useState } from "react";
+import Swal from "sweetalert2";
 
 const AddProduct = () => {
-    const [brandName,setBrandName] = useState('')
+    const [brandName,setBrandName] = useState("")
     const {BrandName}=brandName
-    // console.log(BrandName);
+    console.log(BrandName);
 
     const handleSubmit = e=>{
         e.preventDefault();
@@ -27,6 +28,12 @@ const AddProduct = () => {
         .then(res=>res.json())
         .then(data=>{
             console.log(data);
+            Swal.fire({
+                icon: 'success',
+                title: 'Product added successfully',
+               
+               
+              })
         })
        
     }
@@ -40,7 +47,7 @@ const AddProduct = () => {
                 </label>
                 <label className="input-group">
                 
-                <input type="text" name="name" placeholder="Enter Name" className="input w-full input-bordered" />
+                <input type="text" name="name" placeholder="Enter Name"required className="input w-full input-bordered" />
                 </label>
                 </div>
 
@@ -51,7 +58,7 @@ const AddProduct = () => {
                 </label>
                 <label className="input-group">
                 
-                <input type="text" name="image" placeholder="Enter image url" className="input input-bordered w-full" />
+                <input type="text" name="image" placeholder="Enter image url"required className="input input-bordered w-full" />
                 </label>
                 </div>
                 </div>
@@ -75,16 +82,16 @@ const AddProduct = () => {
                 </label>
                 <label className="input-group">
                 
-                <input type="text" name="price" placeholder="Enter price" className="input input-bordered w-full" />
+                <input type="text" name="price" placeholder="Enter price"required className="input input-bordered w-full" />
                 </label>
                 </div>
                 </div>
                 <div className="md:flex gap-5 mb-5">
             <div className="form-control md:w-1/2">
             <label name="brandName">Choose a brandName :</label>
-                <select onChange={(e) => setBrandName({ BrandName: e.target.value })} className="border py-4 px-4" id=""   required>
+                <select onChange={(e) => setBrandName({ BrandName: e.target.value })} className="border py-4 px-4" id="" defaultValue={'apple'}  required>
 
-                    <option >select</option>
+                    
                     <option >google</option>
                     <option >apple</option>
                     <option >samsung</option>
@@ -115,7 +122,7 @@ const AddProduct = () => {
                 <textarea className="border p-5" name="des"placeholder="Enter short description " id="" cols="100" rows="5"></textarea>
                 </label>
                 </div>
-                <input type="submit" value="Add Coffee" className="btn btn-block text-white bg-[red] mt-4"/>
+                <input type="submit"required value="Add Coffee" className="btn btn-block text-white bg-[red] mt-4"/>
             </form>
 
     </div>

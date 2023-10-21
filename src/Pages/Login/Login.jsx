@@ -1,10 +1,13 @@
 import { useContext, useState } from "react";
-import { Link, Navigate } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../ContextApi/AuthProvider";
+import swal from "sweetalert";
 
 const Login = () => {
     const {signIn,signInWithGoogle} =useContext(AuthContext)
     const [error,setError]= useState('')
+    const location = useLocation()
+  const Navigate = useNavigate()
     const handleLogin = e=>{
         e.preventDefault();
         const form =e.target;
@@ -15,7 +18,8 @@ const Login = () => {
         signIn(email,password)
         .then(result=>{
             console.log(result.user);
-            // Navigate(location?.state ? location.state : '/')
+            swal('login successfully')
+            Navigate(location?.state ? location.state : '/')
         })
         .catch(error=>{
             console.log(error);
@@ -26,7 +30,7 @@ const Login = () => {
         signInWithGoogle()
         .then(result=>{
             console.log(result.user);
-             // Navigate(location?.state ? location.state : '/')
+             Navigate(location?.state ? location.state : '/')
            
         })
         .catch(error=>{

@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import BrandsProductCart from "../BrandsProductCart/BrandsProductCart";
+import Slider from "../Slider/Slider";
 
 const BrandProducts = () => {
     const loader = useLoaderData();
@@ -7,7 +8,7 @@ const BrandProducts = () => {
     
     return (
         <div>
-            
+            <Slider></Slider> 
         <div className="grid lg:grid-cols-3 gap-5">
             {
                 loader.map((products,index)=> <BrandsProductCart key={index}products={products}>{loader}</BrandsProductCart>)

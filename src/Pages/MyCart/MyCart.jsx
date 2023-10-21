@@ -6,12 +6,13 @@ import MyCartCard from "../../components/MyCartCard/MyCartCard";
 const MyCart = () => {
     const loader = useLoaderData();
     // console.log(loader);
-   
+   const [user,setUser] = useState(loader)
+//    console.log(user);
     return (
         <div>
             
             {
-                loader.map(item=><MyCartCard key={item.name} item={item}>{loader}</MyCartCard>)
+                user.map(item=><MyCartCard key={item.name} setUser={setUser} user={user} item={item}></MyCartCard>)
             }
         </div>
     );
