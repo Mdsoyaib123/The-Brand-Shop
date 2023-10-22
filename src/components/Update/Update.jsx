@@ -18,7 +18,7 @@ const handleSubmit = e=>{
     const addProduct = {name,image,type,price,brandName,rating,des}
     console.log(addProduct);
 
-    fetch(`http://localhost:5000/brand/${_id}`,{
+    fetch(`https://assainment-10-server-side.vercel.app/brand/${_id}`,{
         method:'PATCH',
         headers: {
             'content-type':'application/json'

@@ -18,7 +18,7 @@ const AddProduct = () => {
         
         const addProduct = {name,image,type,price,BrandName,rating,des}
         console.log(addProduct);
-        fetch('http://localhost:5000/brands',{
+        fetch('https://assainment-10-server-side.vercel.app/brands',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

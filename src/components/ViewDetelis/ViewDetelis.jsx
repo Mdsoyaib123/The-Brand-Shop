@@ -11,7 +11,7 @@ const ViewDetelis = () => {
     
     const {brandName,img,description,product,price,rating}=loader ;
     const handleAddToCart =()=>{
-        fetch('http://localhost:5000/cart',{
+        fetch('https://assainment-10-server-side.vercel.app/cart',{
             method:'POST',
             headers: {
                 'content-type': 'application/json'

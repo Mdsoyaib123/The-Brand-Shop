@@ -32,12 +32,12 @@ const router = createBrowserRouter([
       {
         path:'/brands/:brandName',
         element: <BrandProducts></BrandProducts>,
-        loader: ({params})=>fetch(`http://localhost:5000/brands/${params.brandName}`)
+        loader: ({params})=>fetch(`https://assainment-10-server-side.vercel.app/brands/${params.brandName}`)
         
       },{
         path:'/detelis/:name',
         element: <ViewDetelis></ViewDetelis>,
-        loader: ({params})=>fetch(`http://localhost:5000/detelis/${params.name}`)
+        loader: ({params})=>fetch(`https://assainment-10-server-side.vercel.app/detelis/${params.name}`)
         
       },
       {
@@ -47,7 +47,7 @@ const router = createBrowserRouter([
       {
         path: '/myCart',
         element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
-      loader: ()=>fetch(`http://localhost:5000/cart`)
+      loader: ()=>fetch(`https://assainment-10-server-side.vercel.app/cart`)
       },
       {
         path: '/login',
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
       {
         path: '/brand/:name',
         element: <Update></Update>,
-        loader: ({params})=>fetch(`http://localhost:5000/brand/${params.name}`)
+        loader: ({params})=>fetch(`https://assainment-10-server-side.vercel.app/brand/${params.name}`)
       }
     ]
   },
