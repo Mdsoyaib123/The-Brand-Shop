@@ -4,16 +4,19 @@ import Swal from "sweetalert2";
 const ViewDetelis = () => {
     const loader = useLoaderData();
     const {name} = useParams();
+    // console.log(loader);
+    // console.log(name);
     
-    const filter = loader.find(item=> item.name === name)
-    const {brandName,img,description,product,price}=filter ;
+    // const filter = loader.find(item=> item.name === name)
+    
+    const {brandName,img,description,product,price,rating}=loader ;
     const handleAddToCart =()=>{
         fetch('http://localhost:5000/cart',{
             method:'POST',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(filter)
+            body: JSON.stringify(loader)
         })
         .then(res=>res.json())
         .then(data=>{
@@ -22,8 +25,8 @@ const ViewDetelis = () => {
         })
     }
     return (
-        <div className="card card-side  p-5 my-10 bg-base-100 shadow-xl">
-        <figure className="w-1/3 "><img  src={img} alt="Movie"/></figure>
+        <div className="card  lg:card-side  p-5 my-10 bg-base-100 shadow-xl">
+        <figure className="w-1/2 mx-auto lg:w-1/3 "><img className="" src={img} alt="Movie"/></figure>
         <div className="card-body pl-24 pt-20">
             <h2 className="card-title text-3xl font-bold ">{name}</h2>
             <h4>BrandName:    {brandName}</h4>
@@ -33,15 +36,11 @@ const ViewDetelis = () => {
             <p className="text-xl font-bold">Price :  ${price}</p>
             </div>
             <div className="rating">
-            <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-            <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
-            <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-            <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-            <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+            <p>Rating:  {rating}</p>
             </div>
             <p>{description}</p>
 
-            <div className="  justify-end">
+            <div className=" flex justify-center lg:justify-end ">
             <button onClick={handleAddToCart} className="btn bg-[red] text-white">Add to cart</button>
             </div>
         </div>

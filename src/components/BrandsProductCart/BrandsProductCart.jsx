@@ -24,7 +24,7 @@ const BrandsProductCart = ({products}) => {
 
           </div>
           <div className="card-actions flex justify-between">
-           <Link to={`http://localhost:5173/brands/${brandName}/${name}`}> <button  className="btn bg-[red] text-white ">View detelis</button></Link>
+           <Link to={`/detelis/${name}`}> <button type="submit"  className="btn bg-[red] text-white ">View detelis</button></Link>
            <Link to={`/brand/${name}`}><button className="btn  bg-[red] text-white" type="submit ">Update</button></Link>
           </div>
         </div>

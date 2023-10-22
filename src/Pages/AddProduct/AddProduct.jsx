@@ -38,10 +38,10 @@ const AddProduct = () => {
        
     }
     return (
-        <div className="w-full my-5">
+        <div className="sm:px-16 w-full my-5">
                 <form onSubmit={handleSubmit}>
-                <div className="md:flex gap-10 mb-5">
-            <div className="form-control md:w-1/2">
+                <div className=" lg:flex gap-10 mb-5">
+            <div className="form-control  lg:w-1/2">
                 <label className="label">
                 <span className="label-text"> Name</span>
                 </label>
@@ -52,7 +52,7 @@ const AddProduct = () => {
                 </div>
 
 
-            <div className="form-control md:w-1/2">
+            <div className="form-control lg:w-1/2">
                 <label className="label">
                 <span className="label-text">Image Url</span>
                 </label>
@@ -64,8 +64,8 @@ const AddProduct = () => {
                 </div>
 
 
-                <div className="md:flex gap-5 mb-5">
-            <div className="form-control md:w-1/2">
+                <div className="lg:flex gap-5 mb-5">
+            <div className="form-control lg:w-1/2">
                 <label className="label">
                 <span className="label-text">Type of product</span>
                 </label>
@@ -76,7 +76,7 @@ const AddProduct = () => {
                 </div>
 
 
-            <div className="form-control md:w-1/2">
+            <div className="form-control lg:w-1/2">
                 <label className="label">
                 <span className="label-text">Price</span>
                 </label>
@@ -86,8 +86,8 @@ const AddProduct = () => {
                 </label>
                 </div>
                 </div>
-                <div className="md:flex gap-5 mb-5">
-            <div className="form-control md:w-1/2">
+                <div className="lg:flex gap-5 mb-5">
+            <div className="form-control  lg:w-1/2">
             <label name="brandName">Choose a brandName :</label>
                 <select onChange={(e) => setBrandName({ BrandName: e.target.value })} className="border py-4 px-4" id="" defaultValue={'apple'}  required>
 

@@ -4,7 +4,7 @@ import Brands from "../../components/Brands/Brands";
 
 const Home = () => {
     return (
-        <div>
+        <div >
             <Banner></Banner>
             <Brands></Brands>
             <AboutUs></AboutUs>

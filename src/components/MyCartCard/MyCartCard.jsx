@@ -37,7 +37,7 @@ const MyCartCard = ({item,setUser,user} ) => {
 
     }
     return (
-        <div className="card card-side w-1/2 mx-auto mb-5 bg-base-100 shadow-xl">
+        <div className="card card-side px-5 mx-auto mb-5 bg-base-300 shadow-xl">
         <figure className="w-1/4"><img src={img} alt="Movie"/></figure>
         <div className="card-body pl-20 pt-10">
             <h2 className="card-title">{name}</h2>

@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 
 const Update = () => {
     const loader = useLoaderData();
+    console.log(loader);
     const {description,img,name,price,product,rating,_id,brandName}=loader;
     
 const handleSubmit = e=>{

@@ -35,9 +35,9 @@ const router = createBrowserRouter([
         loader: ({params})=>fetch(`http://localhost:5000/brands/${params.brandName}`)
         
       },{
-        path:'/brands/:brandName/:name',
+        path:'/detelis/:name',
         element: <ViewDetelis></ViewDetelis>,
-        loader: ({params})=>fetch(`http://localhost:5000/brands/${params.brandName}`)
+        loader: ({params})=>fetch(`http://localhost:5000/detelis/${params.name}`)
         
       },
       {
@@ -47,7 +47,7 @@ const router = createBrowserRouter([
       {
         path: '/myCart',
         element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
-        loader: ()=>fetch(`http://localhost:5000/cart`)
+      loader: ()=>fetch(`http://localhost:5000/cart`)
       },
       {
         path: '/login',

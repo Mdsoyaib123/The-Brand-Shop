@@ -1,11 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
 import navbar from './navbar.css'
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../ContextApi/AuthProvider";
 import swal from "sweetalert";
 
 const Navbar = () => {
     const {user,logOut} = useContext(AuthContext)
+
+    const [theme,setTheme] = useState('light-theme')
     const handleLogOut = () =>{
         logOut()
         .then(()=>{
@@ -15,6 +17,13 @@ const Navbar = () => {
             console.log(error);
         })
     }
+    const handleToggle=()=>{
+      theme ==='dark-theme' ? setTheme('light-theme') : setTheme('dark-theme')
+    }
+    useEffect(()=>{
+      document.body.className= theme ;
+    },[theme])
+
     const links= <div className="isActive flex gap-10 text-base font-semibold">
       <NavLink  to='/'
         
@@ -40,7 +49,7 @@ const Navbar = () => {
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
-      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-80">
         {links}
       </ul>
     </div >
@@ -55,12 +64,7 @@ const Navbar = () => {
       {links}
     </ul>
   </div>
-  <div className="navbar-end ">
-
-   
-   
-  
-
+  <div className="navbar-end flex gap-4  ">
     {
         user ? <>
         <div className=" block px-10 ">
@@ -72,11 +76,12 @@ const Navbar = () => {
         :
         <Link to='/login'><button className="btn font-semibold ">Login</button></Link>
     }
-   
+    <button onClick={handleToggle} className="btn rounded-xl ">Try Toggle</button>
+    
   </div>
 </div>
-    <div>
-      
+    <div className="navbar-start">
+    
     </div>
      </div>
     );
