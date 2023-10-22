@@ -2,7 +2,7 @@
 const AboutUs = () => {
     return (
        <>
-       <h1 className="text-center text-5xl font-bold py-3">Why Choose Us</h1>
+       <h1 className="text-center text-5xl font-bold py-3">Why Choose Us !!!!</h1>
         <div className="flex w-full">
             <div className="w-1/2">
                 <img src="https://i.ibb.co/w7q57Bj/Why-choose-us-600x400.png" alt="" />
